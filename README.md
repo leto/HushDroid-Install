@@ -1,7 +1,7 @@
 # HushDroid-Install
 ```GrapheneOS Installation 
 
-Fastboot
+## Fastboot
 
 You need an updated copy of the fastboot tool and it needs to be included in your PATH environment variable. You can run fastboot --version to determine the current version. It should be at least 28.0.2. 
 
@@ -14,17 +14,17 @@ fastboot version 29.0.4-5871666 Installed as /home/username/downloads/platform-t
 
 Don't proceed with the installation process until this is set up properly in your current shell.
 
-Obtaining signify
+## Obtaining signify
 
 To verify the download of the OS beyond the security offered by HTTPS, you need the signify tool. If you don't have a way to obtain signify from a trusted package repository, such as on Windows, skip the additional verification. This is an important step, but it only makes sense if you can chain trust from your existing OS install.
 On many distributions, signify is available via a signify package in the official repositories. On Debian-based distributions like Ubuntu, the package and command name were renamed to signify-openbsd. Following Debian tradition, the signify package and command are an unmaintained mail-related tool for generating mail signatures (not cryptographic signatures) with the final 3 releases from 2003-2004 made directly by the developer via the Debian package without upstream releases. This is clearly not what you want, but it's easy to end up trying to use it instead of signify-openbsd.
 
-Enabling OEM unlocking
+## Enabling OEM unlocking
 
 Enable the developer options menu by going to Settings ➔ About phone and pressing on the build number menu entry until developer mode is enabled.
 Next, go to Settings ➔ System ➔ Advanced ➔ Developer options and toggle on the 'Enable OEM unlocking' setting. 
 
-Unlocking Bootloader
+## Unlocking Bootloader
 
 
 Boot into the bootloader interface by turning off the device, and then turning it on by holding both the Volume Down and Power buttons.
